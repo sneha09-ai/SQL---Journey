@@ -1,0 +1,4 @@
+SELECT Name,DeptID
+FROM Employees E1
+WHERE EXISTS(SELECT DeptID FROM Departments D
+WHERE E1.DeptID=D.DeptID);
