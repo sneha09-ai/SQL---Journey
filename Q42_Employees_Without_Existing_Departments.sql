@@ -1,0 +1,4 @@
+SELECT Name,DeptID
+FROM Employees E
+WHERE NOT EXISTS (SELECT 1 FROM Departments D
+WHERE E.DeptID = D.DeptID );
