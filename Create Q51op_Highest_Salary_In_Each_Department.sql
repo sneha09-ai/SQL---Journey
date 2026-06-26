@@ -10,5 +10,5 @@ FROM (
     FROM Employees
     JOIN Departments
     ON Employees.DeptID = Departments.DeptID
-) AS T
+) AS Temporary
 WHERE RowNo =1;
